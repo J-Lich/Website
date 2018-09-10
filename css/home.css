@@ -1,0 +1,308 @@
+/* All Page */
+html {
+	background-color: #cccccc;
+}
+
+body {
+	margin: 5vh;
+	
+	font-family: Avenir, Cambria, "Times New Roman", serif;
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+img {
+	width: 100%;
+}
+
+#menubutton {
+	float: right;
+	
+	display: inline;
+	height: 3em;
+	width: 3em;
+}
+
+#closemenubutton {
+	float: right;
+	
+	display: none;
+
+	height: 3em;
+	width: 3em;	
+	
+}
+
+#menuoverlay {
+	width: 80%;
+	height: 300px;	
+		
+	background-color: rgba(191, 191, 191, 0.96);
+	
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	
+	display: none;
+	z-index: 2;
+
+	
+	text-align: center;
+	font-size: xx-large;
+}
+
+#menuoverlay ul {
+   	list-style-type: none;
+   	
+   	position: absolute;
+   	
+   	width: 80%;
+   	margin-left: 10%;
+   	margin-right: 10%;
+   	
+   	height: 60%;
+   	margin-top: 25px;
+/*    	margin-bottom: 20%; */
+   	
+}
+
+#menuoverlay li {
+	border: solid 4px black;
+	margin-bottom: 0.5em;
+	
+	
+	width: 98%;
+	
+	display: block;
+}
+
+
+a:visited {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.78);
+	text-decoration: none;
+}
+
+a:link {
+	font-weight: bold;
+	color: black; 
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+	color: rgba(87, 87, 87, 0.5);
+}
+
+
+/* Main Body */
+
+#mainbody {
+	margin-top: 2em;
+	margin-bottom: 5em;
+}
+
+#mainbody p {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#bubblehome {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.bubble {	
+	width: 30%;
+	padding: 1%;
+	
+	position: relative;
+	display: inline;
+	float: left;
+	
+	text-align: center;	
+	
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.bubblecontainer {
+		position: relative;
+		width: 100%;
+	}
+	
+	.bubble .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		height: 100%;
+		width: 100%;
+		
+		opacity: 0;
+		transition: .5s ease;
+		
+		display: inline;
+	}	
+	
+	
+	.bubble .textOverlay {
+		line-height: 10px;
+	}
+	
+	.bubblecontainer:hover .overlay {
+		opacity: 0.3;
+	}
+
+
+
+
+
+/* Header Specific */
+
+@media (max-width:670px) {
+	header #menu {
+		display: none;
+	}
+	
+	#profile {
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	#aboutme {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	
+	
+	footer {	
+		width: 57vw;
+		
+		
+		background-color: rgba(192, 192, 192, 0.8);
+		position: fixed;
+		
+		bottom: 1em;
+		
+		left: 22vw;
+		
+		text-align: center;		
+	}
+	
+	.contact {	
+/* 		margin-left: 2vw; */
+		padding: 2vw;
+		
+		width: 15vw;
+		
+		text-align: center;
+		float: left;
+	}	
+	
+	.contact img {
+		width: 10vw;
+	}
+	
+	.textOverlay {
+		 display: none;
+	}
+}
+
+@media (min-width: 671px) {
+	header #menu {
+		float: right;
+	}
+	
+	#menubutton {
+		display: none;
+	}
+	
+	ul {
+    	list-style-type: none;
+		padding: 0;
+	}
+
+	li {
+    	display: inline;
+		padding-right: 0.5em;
+	}
+	
+	#profile {
+		width: 30vw;
+		position: relative;
+		display: inline;
+	}
+	
+	#aboutme {
+		width: 62%;
+		position: relative;
+		float: right;
+	}
+	
+	/*Footer Related*/
+	
+	footer {	
+		width: 30vw;
+		height: 70px;
+		
+		
+		background-color: rgba(192, 192, 192, 0.8);
+		
+		position: fixed;
+		bottom: 1em;
+		left: 2em; 		
+	}
+	
+	.contact {	
+		float: left;
+		
+		width: 10vw;
+		height: 70px;
+		
+		text-align: center;
+		font-size: smaller;
+		font-weight: bold;
+	}
+	
+	.container {
+		position: relative;
+		width: 100%;
+	}
+	
+	.contact img {	
+		height: 50px;
+		width: 50px;
+		
+		margin-top: 10px;	
+	}
+	
+	.contact .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		height: 70px;
+		width: 100%;
+		
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(170, 170, 170, 1);	
+		
+		display: inline;
+	}	
+	
+	.contact a:hover {
+		color: black;
+	}
+	
+	.textOverlay {
+		font-size: smaller;
+		line-height: 70px;
+	}
+	
+	.container:hover .overlay {
+		opacity: 0.9;
+	}
+}
