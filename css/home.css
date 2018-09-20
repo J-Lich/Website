@@ -227,7 +227,7 @@ a:hover {
 	}
 }
 
-@media (min-width: 769spx) {
+@media (min-width: 769px) {
 	header #menu {
 		float: right;
 	}
