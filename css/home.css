@@ -303,6 +303,8 @@ input {
   #bubblehome {
     height: 20vmin;
     width: 90vw;
+
+    margin-bottom: 1em;
   }
 
   .bubble {
