@@ -41,10 +41,11 @@
 
       <!-- Mobile button trigger -->
 			<div id="menubutton">
-      	<input type="image" src="docs/images/menu-icon.png" alt="Menu" onclick="openOverlay()">
+      	<input id="openmenubutton" type="image" src="docs/images/menu-icon.png" alt="Menu" onclick="openOverlay()">
+				<input id="closemenubutton" type="image" src="docs/images/close-icon.png" alt="Menu" onclick="closeOverlay()">
 			</div>
     </header>
-
+		
     <!-- Desktop photo and contact -->
     <div id="info">
       <img src="docs/images/profile-medium.png">
@@ -92,19 +93,18 @@
 		</div>
 
 		<!-- Description for both Mobile and Desktop -->
-
 		<div id="mainbody">
-			<nav id="menuoverlay">
-				<!-- <div class="mask">
-					<input id="closemenubutton" type="image" src="docs/images/close-icon.png" alt="Menu" onclick="closeOverlay()">
 
+			<!-- Overlay for Mobile Nav -->
+			<nav id="menuoverlay">
+				<div class="mask">
 					<ul>
-						<li><a href="#work">WORK</a></li>
-						<li><a href="#education">EDUCATION</a></li>
-						<li><a href="#experience">EXPERIENCE</a></li>
-						<li><a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download>RESUME</a></li>
+						<a href="#work"><li>WORK</li></a>
+						<a href="#education"><li>EDUCATION</li></a>
+						<a href="#experience"><li>EXPERIENCE</li></a>
+						<a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download><li>RESUME</li></a>
 					</ul>
-				</div> -->
+				</div>
 			</nav>
 
 			<div id="overview">
@@ -149,15 +149,17 @@
 				</div>
 			</div>
 
-				<div id="description"
+				<div id="description">
 				<p>
 					<b>Who am I?</b>
 					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
 				</p>
+				<hr>
 				<p>
 					<b>What are my projects?</b>
 					Any project that peaks my interest or gets me thinking, I act on. I currently use a self built electric skateboard to get from A to B,  and I am planning my next Electric Vehicle of a larger scale… I run an Ubuntu Server that hosts all of my automated online needs, as well as hosting this site, designed and coded from scratch by myself.
 				</p>
+				<hr>
 				<p>
 					<b>What do I have to offer?</b>
 					With my professional experience in both customer service and IT networking, my ever-growing list of DIY projects, and my determined nature, I offer flexibility and the ability to adapt, learn, and enhance my technical knowledge in order to complete any project.
