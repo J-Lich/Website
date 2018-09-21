@@ -1,101 +1,362 @@
-/* All Page */
-html {
-	background-color: #cccccc;
-}
-
 body {
-	margin: 5vh;
+  background-color: #cccccc;
 
-	font-family: Avenir, Cambria, "Times New Roman", serif;
+  margin: 5vw;
+  height: 90vh;
+  width: 90vw;
+
+  font-family: Avenir, Cambria, "Times New Roman", serif;
 	font-size: 100%;
 }
 
-h1 {
-	font-size: 2em;
-}
-
 img {
-	width: 100%;
-}
-
-#menubutton {
-	float: right;
-
-	display: inline;
-	height: 5em;
-	width: 5em;
-}
-
-#closemenubutton {
-	float: right;
-
-	display: none;
-
-	height: 5em;
-	width: 5em;
-
-	margin-top: 5vh;
-	margin-right: 5vh;
-}
-
-#menuoverlay {
-	width: 100%;
-	height: 100%;
-
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: none;
-	z-index: 2;
-
-
-	text-align: center;
-	font-size: xx-large;
-}
-
-#menuoverlay::before {
-	content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  opacity: 0.95;
-  z-index: -1;
-	background-color: grey;
+}
 
-	-webkit-filter:blur(4px);
-    filter:blur(4px);
+input {
+  width: 100%;
+}
+
+/*Header Desktop*/
+@media (min-width: 761px) {
+  header {
+    position: relative;
+
+    height: 100px;
+    width: 90vw;
+
+    margin-bottom: 2em;
+  }
+
+  #profile_mobile {
+    display: none;
+  }
+
+  #title {
+    display: inline-block;
+    float: left;
+
+    height: 100px;
+    width: 45vw;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  header h3 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+
+    font-size: 1em;
+  }
+
+  #title_mobile {
+    display: none;
+  }
+
+  #menu {
+    display: inline-block;;
+    float: left;
+
+    height: 100px;
+    width: 45vw;
+  }
+
+  #menu ul {
+    list-style-type: none;
+
+    margin-top: 50px;
+    height: 50px;
+    width: 45vw;
+  }
+
+  #menu li {
+    display: inline;
+
+    padding-right: 0.35em;
+  }
+
+  #menubutton {
+    display: none;
+  }
+}
+
+/* Header Mobile */
+@media (max-width: 760px) {
+
+  header {
+    height: 15vw;
+    width: 90vw;
+
+    margin-bottom: 5vw;
+  }
+
+	#profile_mobile {
+    display: inline-block;
+    float: left;
+
+    height: 15vw;
+    width: 15vw;
+  }
+
+  #title_mobile {
+    display: inline-block;
+    float: left;
+
+    margin-left: 5vw;
+
+    height: 15vw;
+    width: 60vw;
+
+    font-size: 10vw;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menubutton {
+    display: inline-block;
+    float: left;
+
+    height: 15vw;
+    width: 10vw;
+  }
+
+  #menubutton input {
+    margin-top: 2.5vw;
+  }
+}
+
+/*Info and description sections Desktop*/
+@media (min-width: 761px) {
+  #info {
+    display: inline-block;
+    float: left;
+
+    height: 70vh;
+    width: 28vw;
+
+    margin-right: 2vw;
+  }
+
+  footer {
+    height: 8vw;
+		width: 24vw;
+
+		border-radius: 2vw;
+
+		background-color: rgba(192, 192, 192, 1);
+
+		position: relative;
+		top: 50px;
+		left: 1.5vw;
+	}
+
+  .container {
+    position: relative;
+
+    height: 8vw;
+    width: 8vw;
+
+    vertical-align: middle;
+  }
+
+	.contact {
+		float: left;
+
+    height: 8vw;
+    width: 8vw;
+	}
+
+  .contact img {
+    height: 4vw;
+    width: 4vw;
+
+    margin-top: 2vw;
+    margin-left: 2vw;
+  }
+
+	.contact .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: 100%;
+		width: 100%;
+
+    border-radius: 2vw;
+
+		opacity: 0;
+		transition: .4s ease;
+
+    background: grey;
+	}
+
+	.textOverlay {
+		line-height: 70px;
+    font-size: 1.25vw;
+    text-align: center;
+    opacity: 1;
+    color: white;
+	}
+
+	.container:hover .overlay {
+		opacity: 0.9;
+	}
+
+
+  #mainbody {
+    display: inline-block;
+    float: left;
+
+    height: 70vh;
+    width: 60vw;
+  }
+}
+
+/*Info and description sections Mobile*/
+@media (max-width: 760px) {
+  #info {
+    display: none;
+  }
+
+  #mainbody {
+    display: inline-block;
+    float: left;
+
+    height: 70vh;
+    width: 90vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+}
+
+/* Main Body Desktop */
+@media (min-width: 761px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  #bubblehome {
+    height: 20vh;
+    width: 60vw;
+  }
+
+  .bubble {
+    display: inline-block;
+    float: left;
+
+    height: 20vh;
+    width: 18vw;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .bubblecontainer {
+    position: relative;
+
+    height: 20vh;
+    width: 18vw;
+
+    text-align: center;
+  }
+
+  .bubblecontainer figure img {
+    height: 16vh;
+    width: 16vh;
+
+    position: absolute;
+    top: 0;
+    left: calc((18vw - 16vh)/2);
+  }
+
+  .bubblecontainer .overlay {
+      display: inline-block;
+
+      opacity: 0;
+  		transition: .4s ease;
+  }
+
+  .bubblecontainer:hover .overlay {
+    opacity: 0.4;
+  }
+
+  .bubblecontainer figcaption {
+    position: relative;
+    top: 16vh;
+  }
 
 }
 
-#menuoverlay ul {
-   	list-style-type: none;
+/* Main Body Mobile */
+@media (max-width: 760px) {
+  #bubblehome {
+    height: 20vmin;
+    width: 90vw;
+  }
 
-   	position: absolute;
+  .bubble {
+    display: inline-block;
+    float: left;
 
-   	width: 80vw;
-   	margin-left: 10vw;
-   	margin-right: 10vw;
+    height: 20vmin;
+    width: 28vw;
 
-		margin-top: 20vh;
-		height: 60vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .bubblecontainer {
+    position: relative;
+
+    height: 20vmin;
+    width: 28vw;
+
+    text-align: center;
+  }
+
+  .bubblecontainer figure img {
+    height: 20vmin;
+    width: 20vmin;
+    margin-bottom: 0;
+
+    position: absolute;
+    top: 0;
+    left: calc((28vw - 20vmin)/2);
+  }
+
+  .bubblecontainer .overlay {
+    display: none;
+  }
+
+  .bubblecontainer .overlay {
+      display: inline-block;
+
+      opacity: 0;
+      transition: .4s ease;
+  }
+
+  .bubblecontainer:hover .overlay {
+    opacity: 0.4;
+  }
+
+  .bubblecontainer figure figcaption {
+    display: none;
+  }
 }
 
-#menuoverlay li {
-	border: solid 4px black;
 
-	height: auto;
-	padding: 2vh;
-
-	vertical-align: middle;
-
-	margin-bottom: 5vh;
-}
-
-
+/* Non Structural Fun! */
 a:visited {
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.78);
@@ -110,216 +371,4 @@ a:link {
 a:hover {
 	font-weight: bold;
 	color: white;
-}
-
-
-/* Main Body */
-
-#mainbody {
-	margin-top: 2em;
-	margin-bottom: 5em;
-}
-
-#mainbody p {
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-
-#bubblehome {
-	border-bottom: 1px solid #bfbfbf;
-}
-
-.bubble {
-	width: 30%;
-	padding: 1%;
-
-	position: relative;
-	display: inline;
-	float: left;
-
-	text-align: center;
-
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-.bubblecontainer {
-		position: relative;
-		width: 100%;
-	}
-
-	.bubble .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		height: 100%;
-		width: 100%;
-
-		opacity: 0;
-		transition: .5s ease;
-
-		display: inline;
-	}
-
-
-	.bubble .textOverlay {
-		line-height: 10px;
-	}
-
-	.bubblecontainer:hover .overlay {
-		opacity: 0.3;
-	}
-
-
-
-
-
-/* Header Specific */
-
-@media (max-width: 768px){
-	header #menu {
-		display: none;
-	}
-
-	#profile {
-		width: 80%;
-		margin-left: 10%;
-	}
-
-	#aboutme {
-		width: 100%;
-		margin-bottom: 2em;
-	}
-
-
-	footer {
-		width: 57vw;
-
-
-		background-color: rgba(192, 192, 192, 0.8);
-		position: fixed;
-
-		bottom: 1em;
-		left: 22vw;
-
-		border-radius: 1vw;
-
-		text-align: center;
-	}
-
-	.contact {
-/* 		margin-left: 2vw; */
-		padding: 2vw;
-
-		width: 15vw;
-
-		text-align: center;
-		float: left;
-	}
-
-	.contact img {
-		width: 10vw;
-	}
-
-	.textOverlay {
-		 display: none;
-	}
-}
-
-@media (min-width: 769px) {
-	header #menu {
-		float: right;
-	}
-
-	#menubutton {
-		display: none;
-	}
-
-	ul {
-    	list-style-type: none;
-		padding: 0;
-	}
-
-	li {
-    	display: inline;
-		padding-right: 0.5em;
-	}
-
-	#profile {
-		width: 30vw;
-		position: relative;
-		display: inline;
-	}
-
-	#aboutme {
-		width: 62%;
-		position: relative;
-		float: right;
-	}
-
-	/*Footer Related*/
-
-	footer {
-		width: 30vw;
-		height: 8vw;
-
-		border-radius: 2vw;
-
-		background-color: rgba(192, 192, 192, 0.8);
-
-		position: fixed;
-		bottom: 1em;
-		left: 2em;
-	}
-
-	.contact {
-		float: left;
-	}
-
-	.container {
-		position: relative;
-		width: 10vw;
-		height: 8vw;
-
-		vertical-align: middle;
-
-	}
-
-	.contact img {
-		width: 5vw;
-		height: 5vw;
-
-		position: absolute;
-		top: 1.5vw;
-		left: 2.5vw;
-	}
-
-	.contact .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		height: 70px;
-		width: 100%;
-
-		opacity: 0;
-		transition: .5s ease;
-		background-color: rgba(170, 170, 170, 1);
-
-		display: inline;
-	}
-
-	.contact a:hover {
-		color: black;
-	}
-
-	.textOverlay {
-		font-size: smaller;
-		line-height: 70px;
-	}
-
-	.container:hover .overlay {
-		opacity: 0.9;
-	}
 }
