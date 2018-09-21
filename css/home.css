@@ -1,5 +1,5 @@
 body {
-  background-color: #cccccc;
+  background-color: rgb(245, 240, 230);
 
   margin: 5vw;
   height: 90vh;
@@ -7,6 +7,9 @@ body {
 
   font-family: Avenir, Cambria, "Times New Roman", serif;
 	font-size: 100%;
+
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 img {
@@ -166,7 +169,7 @@ hr {
 
 		border-radius: 2vw;
 
-		background-color: rgba(192, 192, 192, 1);
+		background-color: rgba(192, 192, 192, 0.3);
 
 		position: relative;
 		top: 50px;
@@ -345,7 +348,7 @@ hr {
   	text-align: center;
   	font-size: xx-large;
 
-    background-color: rgba(140, 140, 140, 0.95);
+    background-color: rgba(210, 205, 195, 0.98);
     border-radius: 2vw;
   }
 
@@ -447,5 +450,5 @@ a:link {
 }
 a:hover {
 	font-weight: bold;
-	color: white;
+	color: silver;
 }
