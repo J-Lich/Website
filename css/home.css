@@ -1,155 +1,13 @@
-body {
-  background-color: rgb(245, 240, 230);
-
-  max-width: 800px;
-
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-
-  height: 90%;
-  width: 90%;
-
-  align-self: center;
-
-  font-family: Avenir, Cambria, "Times New Roman", serif;
-	font-size: 100%;
-
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-/*Header Desktop*/
+/* Main Body Desktop */
 @media (min-width: 761px) {
-  header {
-    position: relative;
-
-    height: 100px;
-    width: 100%;
-
-    margin-bottom: 2em;
-    border-bottom: 1px solid rgba(185, 185, 185, 1);
+  #mainbody {
+    height: 70vh;
+    width: 65%;
   }
 
-  #profile_mobile {
-    display: none;
-  }
-
-  #title {
-    display: inline-block;
-    float: left;
-
-    height: 100px;
-    width: 50%;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  header h3 {
-    position: absolute;
-    top: 50px;
-    left: 85px;
-
-    font-size: 1em;
-    font-weight: lighter;
-  }
-
-  #title_mobile {
-    display: none;
-  }
-
-  #menu {
-    display: inline-block;;
-    float: left;
-
-    height: 100px;
-    width: 50%;
-  }
-
-  #menu ul {
-    list-style-type: none;
-
-    margin-top: 50px;
-    height: 50px;
-    width: 100%;
-  }
-
-  #menu li {
-    display: inline;
-
-    padding-right: 0.35em;
-  }
-
-  #menubutton {
-    display: none;
-  }
-}
-
-/* Header Mobile */
-@media (max-width: 760px) {
-
-  header {
-    height: 15vw;
-    width: 90vw;
-
-    padding-bottom: 2.5vw;
-    margin-bottom: 2.5vw;
-    border-bottom: 1px solid rgba(185, 185, 185, 1);
-  }
-
-	#profile_mobile {
-    display: inline-block;
-    float: left;
-
-    height: 15vw;
-    width: 15vw;
-  }
-
-  #title_mobile {
-    display: inline-block;
-    float: left;
-
-    margin-left: 5vw;
-
-    height: 15vw;
-    width: 60vw;
-
-    font-size: 10vw;
-  }
-
-  #title {
-    display: none;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #menubutton {
-    display: inline-block;
-    float: left;
-
-    height: 15vw;
-    width: 10vw;
-  }
-
-  #menubutton #openmenubutton {
-    margin-top: 2.5vw;
-  }
-
-  #menubutton #closemenubutton {
-    margin-top: 2.5vw;
-
-    display: none;
-  }
-}
-
-/*Info and description sections Desktop*/
-@media (min-width: 761px) {
   #info {
     display: inline-block;
+    position: relative;
     float: left;
 
     height: 70vh;
@@ -158,121 +16,16 @@ body {
     margin-right: 5%;
   }
 
-  footer {
+  #footer_desktop {
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 150px)/2);
+
     height: 50px;
-		width: 150px;
-
-		border-radius: 15px;
-
-		background-color: rgba(192, 192, 192, 0.3);
-
-		position: relative;
-		top: 10%;
-		left: calc((100% - 150px)/2);
-	}
-
-  .container {
-    position: relative;
-
-    height: 100%;
-    width: 100%;
-
-    vertical-align: middle;
+    width: 150px;
   }
 
-	.contact {
-		float: left;
-
-    height: 100%;
-    width: 33.33%;
-	}
-
-  .contact img {
-    height: 50%;
-    width: auto;
-
-    margin-top: 25%;
-    margin-left: 25%;
-  }
-
-	.contact .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		height: 100%;
-		width: 100%;
-
-    border-radius: 15px;
-
-		opacity: 0;
-		transition: .4s ease;
-
-    background: grey;
-	}
-
-	.textOverlay {
-		line-height: 50px;
-    font-size: 0.5em;
-    text-align: center;
-    opacity: 1;
-    color: white;
-	}
-
-	.container:hover .overlay {
-		opacity: 0.9;
-	}
-
-
-  #mainbody {
-    display: inline-block;
-    float: left;
-
-    height: 70vh;
-    width: 65%;
-  }
-
-  #mainbody #description p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-}
-
-/*Info and description sections Mobile*/
-@media (max-width: 760px) {
-  #info {
-    display: none;
-  }
-
-  #mainbody {
-    position: relative;
-
-    display: inline-block;
-    float: left;
-
-    height: calc(100vh - 25vw - 96px);
-    width: 90vw;
-
-    overflow: auto;
-  }
-
-  #mainbody #description p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  h2 {
-    font-size: 5vw;
-  }
-}
-
-/* Main Body Desktop */
-@media (min-width: 761px) {
-  h2 {
-    font-size: 2em;
-  }
-
-  #menuoverlay {
+  #footer_mobile {
     display: none;
   }
 
@@ -325,68 +78,25 @@ body {
   }
 
   .bubblecontainer .overlay {
-    display: inline-block;
-
-    position: absolute;
     left: calc((100% - 130px)/2);
 
-    opacity: 0;
-    transition: .4s ease;
+    border-radius: 65px;
+
   }
 
   .bubblecontainer:hover .overlay {
     opacity: 0.4;
   }
-
-  #footer_mobile {
-    display: none;
-  }
 }
 
 /* Main Body Mobile */
 @media (max-width: 760px) {
-
-  #menuoverlay {
-  	width: 80%;
-  	height: 472px;
-
-    position: fixed;
-    left: 10%;
-
-  	display: none;
-  	z-index: 3;
-
-  	text-align: center;
-  	font-size: xx-large;
-
-    background-color: rgba(210, 205, 195, 0.98);
-    border-radius: 20px;
-  }
-
-  #menuoverlay ul {
-     	list-style-type: none;
-
-     	position: absolute;
-      top: 40px;
-
-     	width: 80%;
-     	margin-left: 10%;
-     	margin-right: 10%;
-  }
-
-  #menuoverlay li {
-  	border: solid 4px black;
-
-  	height: 60px;
-    line-height: 64px;
-
-    border-radius: 20px;
-
-  	margin-bottom: 40px;
+  #info {
+    display: none;
   }
 
   #bubblehome {
-    height: 20vmin;
+    height: 25vmin;
     width: 90vw;
 
     margin-bottom: 1em;
@@ -397,41 +107,24 @@ body {
     display: inline-block;
     float: left;
 
-    height: 20vmin;
-    width: 28vw;
+    height: 25vmin;
+    width: 25vw;
 
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
   }
 
   .bubblecontainer {
     position: relative;
 
-    height: 20vmin;
-    width: 28vw;
+    height: 100%;
+    width: 100%;
 
     text-align: center;
   }
 
-  .bubblecontainer figure img {
-    height: 20vmin;
-    width: 20vmin;
-    margin-bottom: 0;
-
-    position: absolute;
-    top: 0;
-    left: calc((28vw - 20vmin)/2);
-  }
-
   .bubblecontainer .overlay {
-    display: none;
-  }
-
-  .bubblecontainer .overlay {
-      display: inline-block;
-
-      opacity: 0;
-      transition: .4s ease;
+    background: none;
   }
 
   .bubblecontainer:hover .overlay {
@@ -441,98 +134,4 @@ body {
   .bubblecontainer figure figcaption {
     display: none;
   }
-
-  #footer_mobile {
-    height: 70px;
-		width: 200px;
-
-		border-radius: 15px;
-
-		background-color: rgba(192, 192, 192, 0.3);
-
-		position: fixed;
-		bottom: 15px;
-		left: calc((100vw - 200px)/2);
-	}
-
-  .container {
-    position: relative;
-
-    height: 70px;
-    width: 66px;
-  }
-
-	.contact {
-		float: left;
-
-    height: 70px;
-    width: 66px;
-	}
-
-  .contact img {
-    height: 35px;
-    width: 35px;
-
-    margin-top: 17.5px;
-    margin-left: 15.5px;
-  }
-
-	.contact .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		height: 100%;
-		width: 100%;
-
-    border-radius: 2vw;
-
-		opacity: 0;
-		transition: .4s ease;
-
-    background: grey;
-	}
-
-	.textOverlay {
-		line-height: 70px;
-    font-size: 1.25vw;
-    text-align: center;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-	}
-
-	.container:hover .overlay {
-		opacity: 0.9;
-	}
-}
-
-/* Non Structural Fun! */
-img {
-  width: 100%;
-}
-
-input {
-  width: 100%;
-}
-
-hr {
-  width: 90%;
-  border: 1px solid rgba(185, 185, 185, 1);
-}
-
-a:visited {
-	font-weight: bold;
-	color: rgba(0, 0, 0, 0.78);
-	text-decoration: none;
-}
-
-a:link {
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
-}
-a:hover {
-	font-weight: bold;
-	color: silver;
 }

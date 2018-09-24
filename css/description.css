@@ -1,91 +1,3 @@
-body {
-  background-color: rgb(245, 240, 230);
-
-  max-width: 800px;
-
-  margin-top: 2em;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-
-  height: 90%;
-  width: 90%;
-
-  position: relative;
-  align-self: center;
-
-  font-family: Avenir, Cambria, "Times New Roman", serif;
-	font-size: 100%;
-
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-footer {
-  height: 70px;
-  width: 200px;
-
-  border-radius: 15px;
-
-  background-color: rgba(192, 192, 192, 0.3);
-
-  position: fixed;
-  bottom: 15px;
-  left: calc((100vw - 200px)/2);
-}
-
-.container {
-  position: relative;
-
-  height: 100%;
-  width: 100%;
-
-  vertical-align: middle;
-}
-
-.contact {
-  float: left;
-
-  height: 100%;
-  width: 33.33%;
-}
-
-.contact img {
-  height: 50%;
-  width: auto;
-
-  margin-top: 25%;
-  margin-left: 25%;
-}
-
-.contact .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 100%;
-  width: 100%;
-
-  border-radius: 15px;
-
-  opacity: 0;
-  transition: .4s ease;
-
-  background: grey;
-}
-
-.textOverlay {
-  line-height: 50px;
-  font-size: 0.5em;
-  text-align: center;
-  opacity: 1;
-  color: white;
-}
-
-.container:hover .overlay {
-  opacity: 0.9;
-}
-
 #overview {
   position: relative;
   margin-bottom: 1em;
@@ -94,7 +6,6 @@ footer {
 figcaption {
   height: 33.33%;
   width: 100%;
-  max-width:
 
   display: inline-block;
   float: left;
@@ -110,18 +21,6 @@ figcaption {
 
   color: white;
   font-weight: 1000;
-}
-
-#mainbody {
-  position: relative;
-
-  display: inline-block;
-  float: left;
-
-  height: calc(100vh - 25vw - 96px);
-  width: 90vw;
-
-  overflow: auto;
 }
 
 #mainbody .subsection {
@@ -141,252 +40,24 @@ figcaption {
   min-height: 20vh;
 }
 
-/*Desktop Specific*/
 @media (min-width: 761px) {
-  header {
+  #overview {
     position: relative;
-
-    height: 100px;
-    width: 100%;
-
-    margin-bottom: 2em;
-    border-bottom: 1px solid rgba(185, 185, 185, 1);
+    height: 200px;
   }
 
-  #profile_mobile {
-    display: none;
+  figcaption {
+    top: 10px;
   }
 
-  #title {
-    display: inline-block;
-    float: left;
+  #overview #icon {
+    height: 80%;
+    width: auto;
 
-    height: 100px;
-    width: 50%;
-  }
+    clip: rect(40px, 160px, 160px, 0);
 
-  h1 {
-    font-size: 3em;
-  }
-
-  header h3 {
     position: absolute;
-    top: 50px;
-    left: 85px;
-
-    font-size: 1em;
-    font-weight: lighter;
+    bottom: 0;
+    left: calc((100% - 160px)/2);
   }
-
-  #title_mobile {
-    display: none;
-  }
-
-  #menu {
-    display: inline-block;;
-    float: left;
-
-    height: 100px;
-    width: 50%;
-  }
-
-  #menu ul {
-    list-style-type: none;
-
-    margin-top: 50px;
-    height: 50px;
-    width: 100%;
-  }
-
-  #menu li {
-    display: inline;
-
-    padding-right: 0.35em;
-  }
-
-  #menubutton {
-    display: none;
-  }
-
-  #menuoverlay {
-    display: none;
-  }
-}
-
-/* Mobile Specific*/
-@media (max-width: 760px) {
-  header {
-    height: 15vw;
-    width: 90vw;
-
-    padding-bottom: 2.5vw;
-    margin-bottom: 2.5vw;
-    border-bottom: 1px solid rgba(185, 185, 185, 1);
-  }
-
-	#profile_mobile {
-    display: inline-block;
-    float: left;
-
-    height: 15vw;
-    width: 15vw;
-  }
-
-  #title_mobile {
-    display: inline-block;
-    float: left;
-
-    margin-left: 5vw;
-
-    height: 15vw;
-    width: 60vw;
-
-    font-size: 10vw;
-  }
-
-  #title {
-    display: none;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #menubutton {
-    display: inline-block;
-    float: left;
-
-    height: 15vw;
-    width: 10vw;
-  }
-
-  #menubutton #openmenubutton {
-    margin-top: 2.5vw;
-  }
-
-  #menubutton #closemenubutton {
-    margin-top: 2.5vw;
-
-    display: none;
-  }
-
-  #menuoverlay {
-    width: 80%;
-    height: 472px;
-
-    position: fixed;
-    left: 10%;
-
-    display: none;
-    z-index: 3;
-
-    text-align: center;
-    font-size: xx-large;
-
-    background-color: rgba(210, 205, 195, 0.98);
-    border-radius: 20px;
-  }
-
-  #menuoverlay ul {
-      list-style-type: none;
-
-      position: absolute;
-      top: 40px;
-
-      width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
-  }
-
-  #menuoverlay li {
-    border: solid 4px black;
-
-    height: 60px;
-    line-height: 64px;
-
-    border-radius: 20px;
-
-    margin-bottom: 40px;
-  }
-
-  .container {
-    position: relative;
-
-    height: 70px;
-    width: 66px;
-  }
-
-	.contact {
-		float: left;
-
-    height: 70px;
-    width: 66px;
-	}
-
-  .contact img {
-    height: 35px;
-    width: 35px;
-
-    margin-top: 17.5px;
-    margin-left: 15.5px;
-  }
-
-	.contact .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		height: 100%;
-		width: 100%;
-
-    border-radius: 2vw;
-
-		opacity: 0;
-		transition: .4s ease;
-
-    background: grey;
-	}
-
-	.textOverlay {
-		line-height: 70px;
-    font-size: 1.25vw;
-    text-align: center;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-	}
-
-	.container:hover .overlay {
-		opacity: 0.9;
-	}
-}
-
-/* Non Structural Fun! */
-img {
-  width: 100%;
-}
-
-input {
-  width: 100%;
-}
-
-hr {
-  width: 90%;
-  border: 1px solid rgba(185, 185, 185, 1);
-}
-
-a:visited {
-	font-weight: bold;
-	color: rgba(0, 0, 0, 0.78);
-	text-decoration: none;
-}
-
-a:link {
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
-}
-a:hover {
-	font-weight: bold;
-	color: silver;
 }

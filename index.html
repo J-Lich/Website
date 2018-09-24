@@ -6,6 +6,7 @@
 
 	<title>James Licciardi</title>
 	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/sitewide.css"/>
 	<link rel="stylesheet" href="css/home.css" />
 
 	<script src="js/overlay.js"></script>
@@ -15,7 +16,7 @@
 	<!-- Wepage header -->
 	<header>
 		<div id="profile_mobile">
-			<img src="docs/images/profile-small.png">
+			<img src="docs/images/profile-small.png"/>
 		</div>
 
 		<!-- Desktop Title -->
@@ -52,8 +53,8 @@
 	<!-- Desktop photo and contact -->
 	<div id="info">
 		<img src="docs/images/profile-medium.png">
-
-		<footer>
+		<!-- Footer -->
+		<footer id="footer_desktop">
 			<div class="contact">
 				<a href="tel:0423554605" alt="Phone Number">
 					<div class="container">
@@ -97,19 +98,22 @@
 
 	<!-- Description for both Mobile and Desktop -->
 	<div id="mainbody">
-
 		<!-- Overlay for Mobile Nav -->
-		<nav id="menuoverlay">
-			<div class="mask">
-				<ul>
-					<a href="#work"><li>WORK</li></a>
-					<a href="#education"><li>EDUCATION</li></a>
-					<a href="#experience"><li>EXPERIENCE</li></a>
-					<a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download><li>RESUME</li></a>
-				</ul>
+		<div id="menucontainer">
+			<div class="mask"></div>
+			<div id="menuoverlay">
+				<nav>
+					<ul>
+						<a href="#work"><li>WORK</li></a>
+						<a href="#education"><li>EDUCATION</li></a>
+						<a href="#experience"><li>EXPERIENCE</li></a>
+						<a href="../../docs/files/Resume%20-%20James%20Licciardi.pdf" download><li>RESUME</li></a>
+					</ul>
+				</nav>
 			</div>
-		</nav>
+		</div>
 
+		<!-- Bubble Overview -->
 		<div id="overview">
 			<h2>a bit about me...</h2>
 
@@ -127,7 +131,7 @@
 				</div>
 
 				<div class="bubble" id="test">
-					<a href="html/electric-skateboard.html" alt="E-Board">
+					<a href="httml/electric-skateboard.html" alt="E-Board">
 						<div class="bubblecontainer">
 							<figure>
 								<img class="bubbleimage" src="docs/images/skateboard.png">
@@ -152,6 +156,7 @@
 			</div>
 		</div>
 
+		<!-- Description of who I am -->
 		<div id="description">
 			<p>
 				<b>Who am I?</b>
@@ -168,10 +173,9 @@
 				With my professional experience in both customer service and IT networking, my ever-growing list of DIY projects, and my determined nature, I offer flexibility and the ability to adapt, learn, and enhance my technical knowledge in order to complete any project.
 			</p>
 		</div>
-
 	</div>
 
-	<!-- Footer for Mobile -->
+	<!-- Footer -->
 	<footer id="footer_mobile">
 		<div class="contact">
 			<a href="tel:0423554605" alt="Phone Number">
