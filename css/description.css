@@ -11,6 +11,7 @@ body {
   height: 90%;
   width: 90%;
 
+  position: relative;
   align-self: center;
 
   font-family: Avenir, Cambria, "Times New Roman", serif;
@@ -112,7 +113,15 @@ figcaption {
 }
 
 #mainbody {
-  margin-bottom: 85px;
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  height: calc(100vh - 25vw - 96px);
+  width: 90vw;
+
+  overflow: auto;
 }
 
 #mainbody .subsection {
@@ -262,46 +271,42 @@ figcaption {
   }
 
   #menuoverlay {
-  	width: 100%;
-  	height: 100%;
+    width: 80%;
+    height: 472px;
 
-  	position: absolute;
-  	top: 0;
-  	left: 0;
+    position: fixed;
+    left: 10%;
 
-  	display: none;
-  	z-index: 2;
+    display: none;
+    z-index: 3;
 
-  	text-align: center;
-  	font-size: xx-large;
+    text-align: center;
+    font-size: xx-large;
 
     background-color: rgba(210, 205, 195, 0.98);
-    border-radius: 2vw;
+    border-radius: 20px;
   }
 
   #menuoverlay ul {
-     	list-style-type: none;
+      list-style-type: none;
 
-     	position: absolute;
+      position: absolute;
+      top: 40px;
 
-      height: 60vh;
-      margin-top: 7vh;
-      margin-bottom: 7vh;
-
-     	width: 80vw;
-     	margin-left: 5vw;
-     	margin-right: 5vw;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
   }
 
   #menuoverlay li {
-  	border: solid 4px black;
+    border: solid 4px black;
 
-  	height: auto;
-  	padding: 2vh;
+    height: 60px;
+    line-height: 64px;
 
-  	vertical-align: middle;
+    border-radius: 20px;
 
-  	margin-bottom: 5vh;
+    margin-bottom: 40px;
   }
 
   .container {
