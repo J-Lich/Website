@@ -60,6 +60,26 @@ a:hover {
   background: rgba(192, 192, 192, 0.5);
 }
 
+
+.download_link {
+  width: 50%;
+  text-align: center;
+
+  margin-left: 25%;
+
+  height: calc(50px + 2em);
+  background: rgba(192, 192, 192, 0.5);
+  border-radius: 10px;
+}
+
+.download_link img {
+  height: 50px;
+  width: 50px;
+
+  margin-top: 5px;
+}
+
+
 /* Footer Related */
 footer {
   height: 70px;

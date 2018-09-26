@@ -1,0 +1,42 @@
+#bodytitle h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#mainbody {
+  width: 100%;
+  height: calc(100vh - 100px - 2em - 1px - 80px - 10px) ;
+
+}
+
+/* Desktop Body */
+@media (min-width: 761px) {
+  header {
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  embed {
+    height: calc(100% - 50px - 2em - 20px - 45px);
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+
+}
+
+/* Mobile body */
+@media (max-width: 760px) {
+
+  #bodytitle h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5vh;
+
+    font-size: 80%;
+    font-weight: lighter;
+  }
+}

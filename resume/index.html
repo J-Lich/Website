@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<base href="../">
+
+	<title>Resume</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/sitewide.css"/>
+	<link rel="stylesheet" href="css/pdf.css"/>
+
+	<script src="js/overlay.js"></script>
+	<script src="js/toggle.js"></script>
+</head>
+
+<body>
+	<!-- Wepage header -->
+	<header>
+		<div id="profile_mobile">
+			<img src="docs/images/profile-small.png">
+		</div>
+
+		<!-- Desktop Title -->
+		<a href="index.html">
+			<div id="title">
+				<h1>james licciardi.</h1>
+				<h3>electrical & Eelectronic engineer</h3>
+			</div>
+
+			<!-- Mobile Title -->
+			<div id="title_mobile">
+				<h1>james.</h1>
+			</div>
+		</a>
+
+		<!-- Desktop Nav Menu -->
+		<nav id="menu">
+			<ul>
+				<a href="work/index.html"><li>WORK</li></a>
+				<a href="education/index.html"><li>EDUCATION</li></a>
+				<a href="projects/index.html"><li>PROJECTS</li></a>
+				<a href="resume/index.html"><li>RESUME</li></a>
+			</ul>
+		</nav>
+
+		<!-- Mobile button trigger -->
+		<div id="menubutton">
+			<input id="openmenubutton" type="image" src="docs/images/menu-icon.png" alt="Menu" onclick="openOverlay()">
+			<input id="closemenubutton" type="image" src="docs/images/close-icon.png" alt="Menu" onclick="closeOverlay()">
+		</div>
+	</header>
+
+	<!-- Overlay for Mobile Nav -->
+
+	<div id="menucontainer">
+		<div class="mask"></div>
+		<div id="menuoverlay">
+			<nav>
+				<ul>
+					<a href="work/index.html"><li>WORK</li></a>
+					<a href="education/index.html"><li>EDUCATION</li></a>
+					<a href="projects/index.html"><li>PROJECTS</li></a>
+					<a href="resume/index.html"><li>RESUME</li></a>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!-- Description for both Mobile and Desktop -->
+	<div id="mainbody">
+		<div id="bodytitle">
+			<h2>resume written in LaTeX.</h2>
+			<h3 class="mobile">(preview not available on mobile)</h3>
+		</div>
+
+		<embed class="desktop" src="docs/files/Latex/resume.pdf" type="application/pdf">
+
+		<a href="docs/files/Latex/resume.pdf" download>
+		<div class="download_link">
+			<img src="docs/images/download.png"/>
+			<h3>pdf download</h3>
+		</div>
+	</a>
+
+	</div>
+
+	<!-- Footer for Mobile -->
+	<footer>
+		<div class="contact">
+			<a href="tel:0423554605" alt="Phone Number">
+				<div class="container">
+					<img class="contactimage" src="docs/images/phone.png" alt="Phone Icon">
+					<div class="overlay">
+						<div class="textOverlay">
+							0423554605
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="contact">
+			<a href="mailto:james.licciardi@gmail.com" alt="Email">
+				<div class="container">
+					<img class="contactimage" src="docs/images/email.png" alt="Email Icon">
+					<div class="overlay">
+						<div class="textOverlay">
+							Email
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="contact">
+			<a href="http://www.linkedin.com/in/james-licciardi-3a6849a4" alt="LinkedIn Profile">
+				<div class="container">
+					<img class="contactimage" src="docs/images/linkedin.png" alt="LinkedIn Icon">
+					<div class="overlay">
+						<div class="textOverlay">
+							Connect
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
