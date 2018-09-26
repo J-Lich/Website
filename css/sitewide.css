@@ -17,7 +17,6 @@ body {
 	font-size: 100%;
 
   text-align: justify;
-  text-justify: inter-word;
 }
 
 /* Non Structural Fun! */
@@ -48,6 +47,17 @@ a:link {
 a:hover {
 	font-weight: bold;
 	color: silver;
+}
+
+.moreinfo {
+  width: calc(100% - 2em);
+  text-align: center;
+
+  margin: 1em;
+
+  height: 2em;
+  line-height: 2em;
+  background: rgba(192, 192, 192, 0.5);
 }
 
 /* Footer Related */
@@ -357,4 +367,8 @@ footer {
   .desktop {
     display: none;
   }
+}
+
+.hide {
+  display: none;
 }

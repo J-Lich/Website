@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-	<base href="../../">
+	<base href="../">
 
-	<title>Electric Skateboard</title>
+	<title>Education</title>
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/sitewide.css"/>
-	<link rel="stylesheet" href="css/description.css"/>
+	<link rel="stylesheet" href="css/list.css"/>
 
 	<script src="js/overlay.js"></script>
+	<script src="js/toggle.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 		<a href="index.html">
 			<div id="title">
 				<h1>james licciardi.</h1>
-				<h3>electrical & electronic engineer</h3>
+				<h3>Electrical & Electronic Engineer</h3>
 			</div>
 
 			<!-- Mobile Title -->
@@ -38,7 +39,7 @@
 		<nav id="menu">
 			<ul>
 				<li><a href="#work">WORK</a></li>
-				<li><a href="education/education.html">EDUCATION</a></li>
+				<li><a href="education/index.html">EDUCATION</a></li>
 				<li><a href="projects/index.html">PROJECTS</a></li>
 				<li><a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download>RESUME</a></li>
 			</ul>
@@ -69,42 +70,68 @@
 
 	<!-- Description for both Mobile and Desktop -->
 	<div id="mainbody">
+		<div id="bodytitle">
+			<h2>education.</h2>
+			<h3 class="mobile">(click to expand)</h3>
+		</div>
 
-		<figure id="overview">
-			<img class="desktop" src="docs/images/skateboard-long.png"/>
-			<img id="icon" class="desktop" src="docs/images/skateboard.png"/>
-			<img class="mobile" src="docs/images/skateboard-medium.png"/>
+		<div class="subsection">
+			<figure id="overview">
+				<img class="desktop" src="docs/images/adl-medium.png"/>
+				<img id="icon" class="desktop" src="docs/images/adl.png"/>
+				<img class="mobile" src="docs/images/adl-medium.png" onclick="toggle()"/>
+				<figcaption>adelaide</figcaption>
+			</figure>
 
-			<figcaption>electric skateboard</figcaption>
-		</figure>
-
-		<div id="description">
-			<div class="subsection">
-				<img src="docs/images/skateboard.png">
+			<div id="toggle" class="hide">
 				<p>
 					<b>Who am I?</b>
 					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
 				</p>
-				<hr>
-			</div>
-
-			<div class="subsection">
-				<img src="docs/images/skateboard.png">
-				<p>
-					<b>Who am I?</b>
-					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
-				</p>
-				<hr>
-			</div>
-
-			<div class="subsection">
-				<img src="docs/images/skateboard.png">
-				<p>
-					<b>Who am I?</b>
-					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
-				</p>
+				<div class="moreinfo">
+					<a href="#"><h3>More information!</h3></a>
+				</div>
 			</div>
 		</div>
+
+		<div class="subsection">
+			<figure id="overview">
+				<img class="desktop" src="docs/images/ubc-medium.png"/>
+				<img id="icon" class="desktop" src="docs/images/ubc.png"/>
+				<img class="mobile" src="docs/images/ubc-medium.png" onclick="toggle1()"/>
+				<figcaption>british columbia</figcaption>
+			</figure>
+
+			<div id="toggle1" class="hide">
+				<p>
+					<b>Who am I?</b>
+					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
+				</p>
+				<div class="moreinfo">
+					<a href="#"><h3>More information!</h3></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="subsection">
+			<figure id="overview">
+				<img class="desktop" src="docs/images/merc-medium.png"/>
+				<img id="icon" class="desktop" src="docs/images/merc.png"/>
+				<img class="mobile" src="docs/images/merc-medium.png" onclick="toggle1()"/>
+				<figcaption>mercedes college</figcaption>
+			</figure>
+
+			<div id="toggle1" class="hide">
+				<p>
+					<b>Who am I?</b>
+					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
+				</p>
+				<div class="moreinfo">
+					<a href="#"><h3>More information!</h3></a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Footer for Mobile -->
 	<footer>

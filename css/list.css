@@ -1,6 +1,5 @@
 #overview {
   position: relative;
-  margin-bottom: 40px;
 }
 
 figcaption {
@@ -23,6 +22,11 @@ figcaption {
   font-weight: 1000;
 }
 
+#bodytitle h2 {
+  width: 100%;
+  text-align: center;
+}
+
 /* Desktop Body */
 @media (min-width: 761px) {
   #mainbody .subsection {
@@ -30,11 +34,16 @@ figcaption {
     float: left;
 
     width: 48%;
-    margin-right: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  #bodytitle h2 {
+    margin-bottom: 1em;
   }
 
   #overview {
-    position: relative;
+    margin-bottom: 40px;
     height: 160px;
   }
 
@@ -54,11 +63,47 @@ figcaption {
     bottom: 0;
     left: calc((100% - 160px)/2);
   }
+
+  #toggle {
+    display: block;
+  }
+
+  #toggle1 {
+    display: block;
+  }
+
+  #toggle2 {
+    display: block;
+  }
+
+  #toggle3 {
+    display: block;
+  }
+  #toggle4 {
+    display: block;
+  }
+
+  #toggle5 {
+    display: block;
+  }
 }
 
 /* Mobile body */
 @media (max-width: 760px) {
   #mainbody .subsection {
     width: 100%;
+  }
+
+  #bodytitle h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5vh;
+
+    font-size: 80%;
+    font-weight: lighter;
+  }
+
+  .subsection p {
+    margin-top: 1em;
   }
 }

@@ -4,23 +4,26 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
-	<title>Electric Skateboard</title>
-	<link rel="stylesheet" href="../css/reset.css"/>
-	<link rel="stylesheet" href="../css/sitewide.css"/>
-	<link rel="stylesheet" href="../css/list.css"/>
+	<base href="../">
 
-	<script src="../js/overlay.js"></script>
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/sitewide.css"/>
+	<link rel="stylesheet" href="css/list.css"/>
+
+	<script src="js/overlay.js"></script>
+	<script src="js/toggle.js"></script>
 </head>
 
 <body>
 	<!-- Wepage header -->
 	<header>
 		<div id="profile_mobile">
-			<img src="../docs/images/profile-small.png">
+			<img src="docs/images/profile-small.png">
 		</div>
 
 		<!-- Desktop Title -->
-		<a href="../index.html">
+		<a href="index.html">
 			<div id="title">
 				<h1>james licciardi.</h1>
 				<h3>Electrical & Electronic Engineer</h3>
@@ -36,16 +39,16 @@
 		<nav id="menu">
 			<ul>
 				<li><a href="#work">WORK</a></li>
-				<li><a href="#education">EDUCATION</a></li>
-				<li><a href="#">EXPERIENCE</a></li>
-				<li><a href="../docs/files/Resume%20-%20James%20Licciardi.pdf" download>RESUME</a></li>
+				<li><a href="education/index.html">EDUCATION</a></li>
+				<li><a href="projects/index.html">PROJECTS</a></li>
+				<li><a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download>RESUME</a></li>
 			</ul>
 		</nav>
 
 		<!-- Mobile button trigger -->
 		<div id="menubutton">
-			<input id="openmenubutton" type="image" src="../docs/images/menu-icon.png" alt="Menu" onclick="openOverlay()">
-			<input id="closemenubutton" type="image" src="../docs/images/close-icon.png" alt="Menu" onclick="closeOverlay()">
+			<input id="openmenubutton" type="image" src="docs/images/menu-icon.png" alt="Menu" onclick="openOverlay()">
+			<input id="closemenubutton" type="image" src="docs/images/close-icon.png" alt="Menu" onclick="closeOverlay()">
 		</div>
 	</header>
 
@@ -57,9 +60,9 @@
 			<nav>
 				<ul>
 					<a href="#work"><li>WORK</li></a>
-					<a href="#education"><li>EDUCATION</li></a>
-					<a href="#experience"><li>EXPERIENCE</li></a>
-					<a href="../docs/files/Resume%20-%20James%20Licciardi.pdf" download><li>RESUME</li></a>
+					<a href="education/index.html"><li>EDUCATION</li></a>
+					<a href="projects/index.html"><li>PROJECTS</li></a>
+					<a href="docs/files/Resume%20-%20James%20Licciardi.pdf" download><li>RESUME</li></a>
 				</ul>
 			</nav>
 		</div>
@@ -67,58 +70,56 @@
 
 	<!-- Description for both Mobile and Desktop -->
 	<div id="mainbody">
-    	<div class="subsection">
-        <figure id="overview">
-          <img class="desktop" src="../docs/images/skateboard-medium.png"/>
-          <img id="icon" class="desktop" src="../docs/images/skateboard.png"/>
-          <img class="mobile" src="../docs/images/skateboard-medium.png"/>
+		<div id="bodytitle">
+			<h2>projects by me.</h2>
+			<h3 class="mobile">(click to expand)</h3>
+		</div>
 
-          <figcaption>electric skateboard.</figcaption>
-        </figure>
+		<div class="subsection">
+			<figure id="overview">
+				<img class="desktop" src="docs/images/skateboard-medium.png"/>
+				<img id="icon" class="desktop" src="docs/images/skateboard.png"/>
+				<img class="mobile" src="docs/images/skateboard-medium.png" onclick="toggle()"/>
+				<figcaption>electric skateboard</figcaption>
+			</figure>
 
-        <p>
+			<div id="toggle" class="hide">
+				<p>
 					<b>Who am I?</b>
 					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
 				</p>
+				<div class="moreinfo">
+					<a href="projects/electric-skateboard/index.html"><h3>More information!</h3></a>
+				</div>
 			</div>
+		</div>
 
-      <div class="subsection">
-        <figure id="overview">
-          <img class="desktop" src="../docs/images/skateboard-medium.png"/>
-          <img id="icon" class="desktop" src="../docs/images/skateboard.png"/>
-          <img class="mobile" src="../docs/images/skateboard-medium.png"/>
+		<div class="subsection">
+			<figure id="overview">
+				<img class="desktop" src="docs/images/bike-medium.png"/>
+				<img id="icon" class="desktop" src="docs/images/bike.png"/>
+				<img class="mobile" src="docs/images/bike-medium.png" onclick="toggle1()"/>
+				<figcaption>electric bike</figcaption>
+			</figure>
 
-          <figcaption>electric skateboard.</figcaption>
-        </figure>
-
-        <p>
+			<div id="toggle1" class="hide">
+				<p>
 					<b>Who am I?</b>
 					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
 				</p>
+				<div class="moreinfo">
+					<a href="#"><h3>More information!</h3></a>
+				</div>
 			</div>
-
-      <div class="subsection">
-        <figure id="overview">
-          <img class="desktop" src="../docs/images/skateboard-medium.png"/>
-          <img id="icon" class="desktop" src="../docs/images/skateboard.png"/>
-          <img class="mobile" src="../docs/images/skateboard-medium.png"/>
-
-          <figcaption>electric skateboard.</figcaption>
-        </figure>
-
-        <p>
-					<b>Who am I?</b>
-					I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.I am currently in my fourth year of studies, undergoing a Bachelor of Engineering and Computer Sciences, with expanding from battery technology to Electric Vehicles.
-				</p>
-			</div>
-  </div>
+		</div>
+	</div>
 
 	<!-- Footer for Mobile -->
 	<footer>
 		<div class="contact">
 			<a href="tel:0423554605" alt="Phone Number">
 				<div class="container">
-					<img class="contactimage" src="../docs/images/phone.png" alt="Phone Icon">
+					<img class="contactimage" src="docs/images/phone.png" alt="Phone Icon">
 					<div class="overlay">
 						<div class="textOverlay">
 							0423554605
@@ -131,7 +132,7 @@
 		<div class="contact">
 			<a href="mailto:james.licciardi@gmail.com" alt="Email">
 				<div class="container">
-					<img class="contactimage" src="../docs/images/email.png" alt="Email Icon">
+					<img class="contactimage" src="docs/images/email.png" alt="Email Icon">
 					<div class="overlay">
 						<div class="textOverlay">
 							Email
@@ -144,7 +145,7 @@
 		<div class="contact">
 			<a href="http://www.linkedin.com/in/james-licciardi-3a6849a4" alt="LinkedIn Profile">
 				<div class="container">
-					<img class="contactimage" src="../docs/images/linkedin.png" alt="LinkedIn Icon">
+					<img class="contactimage" src="docs/images/linkedin.png" alt="LinkedIn Icon">
 					<div class="overlay">
 						<div class="textOverlay">
 							Connect
