@@ -25,6 +25,16 @@
     width: 150px;
   }
 
+  #footer_desktop .textOverlay {
+    line-height: 50px;
+  }
+
+  #footer_desktop #phoneNum p {
+    margin-top: 2px;
+    line-height: 15px;
+    height: 15px;
+  }
+
   #footer_mobile {
     display: none;
   }
