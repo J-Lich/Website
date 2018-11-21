@@ -281,16 +281,15 @@ footer {
 
   #menucontainer {
     position: relative;
+    top: 0;
+    left: 0
   }
 
   #menuoverlay {
   	width: 90%;
-  	/*height: 445px;*/
-    height: calc(100vh - 25vw - 100px);
+  	height: calc(100vh - 25vw);
 
     position: fixed;
-    top: 25vw;
-    left: 5%;
 
   	display: none;
   	z-index: 3;
@@ -298,8 +297,7 @@ footer {
   	text-align: center;
   	font-size: xx-large;
 
-    background-color: rgba(210, 210, 210, 0.8);
-    border-radius: 10px;
+    background-color: rgb(245, 240, 230);
   }
 
   #menuoverlay ul {
@@ -320,12 +318,6 @@ footer {
     line-height: 64px;
     margin-top: calc((100vh - 25vw - 100px - 30vh - 240px)/5);
     margin-bottom: calc((100vh - 25vw - 100px - 30vh - 240px)/5);
-
-    background-color: rgba(180, 180, 180, 0.8);
-    border-radius: 10px;
-
-
-
   }
 }
 
@@ -340,10 +332,6 @@ footer {
 
       display: inline-block;
       float: left;
-
-      height: calc(100vh - 4em - 100px - 2em - 1px - 80px) ;
-
-      overflow: auto;
     }
 
     #mainbody #description p {
