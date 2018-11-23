@@ -83,15 +83,14 @@ a:hover {
 /* Footer Related */
 footer {
   height: 70px;
-  width: 200px;
+  width: 280px;
 
   border-radius: 15px;
-
   background-color: rgba(210, 210, 210, 0.7);
 
   position: fixed;
   bottom: 15px;
-  left: calc((100% - 200px)/2);
+  left: calc((100% - 280px)/2);
 }
 
 .container {
@@ -107,7 +106,7 @@ footer {
   float: left;
 
   height: 100%;
-  width: 33.33%;
+  width: 25%;
 }
 
 .contact img {
@@ -137,12 +136,22 @@ footer {
   border-radius: 15px;
 }
 
-.textOverlay {
-  line-height: 70px;
-  font-size: 0.7em;
+footer .textOverlay {
+  line-height: 40px;
+  font-size: 20px;
   text-align: center;
-  opacity: 1;
-  color: white;
+
+  position: fixed;
+  bottom: 70px;
+  left: calc((100% - 150px)/2);
+
+
+  border-radius: 15px;
+  background-color: rgba(210, 210, 210, 0.9);
+  color: black;
+
+  width: 150px;
+  height: 40px;
 }
 
 .container:hover .overlay {
@@ -153,16 +162,14 @@ footer {
 @media (min-width: 761px) {
   footer{
     height: 50px;
-    width: 300px;
+    width: 200px;
     font-size: 1.5em;
-    line-height: 30px;
-    left: calc((100% - 300px)/2);
+    line-height: 50px;
+    left: calc((100% - 200px)/2);
   }
 
-  .contact img {
-    height: 30px;
-    margin-left: 35px;
-    margin-top: 10px;
+  .textOverlay {
+    line-height: 50px;
   }
 
   header {
@@ -241,6 +248,10 @@ footer {
     padding-bottom: 2.5vw;
     margin-bottom: 2.5vw;
     border-bottom: 1px solid rgba(185, 185, 185, 1);
+  }
+
+  .textOverlay {
+    display: none;
   }
 
 	#profile_mobile {
