@@ -2,6 +2,7 @@
 @media (min-width: 761px) {
   #mainbody {
     width: 65%;
+    margin-bottom: 0;
   }
 
   #info {
@@ -12,6 +13,8 @@
     height: 70vh;
     width: 30%;
 
+    perspective: 1em;
+
     margin-right: 5%;
   }
 
@@ -20,29 +23,32 @@
     top: 50%;
     left: calc((100% - 150px)/2);
 
+    font-size: 1em;
+
     height: 50px;
     width: 150px;
   }
 
+  #footer_desktop img {
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+
   #footer_desktop .textOverlay {
     position: fixed;
-    top: 50%;
-    left: 5%;
+    top: calc(50% + 50px);
+    left: 0;
 
     line-height: 50px;
     font-size: 1em;
     color: black;
 
-    width: 27%;
+    width: 100%;
     height: 50px;
 
   }
 
-  #footer_desktop #phoneNum p {
-    margin-top: 2px;
-    line-height: 15px;
-    height: 15px;
-  }
 
   #footer_mobile {
     display: none;
@@ -99,6 +105,10 @@
 
   .bubblecontainer:hover .overlay {
     opacity: 0.4;
+  }
+
+  .bubblecontainer:hover figcaption {
+    color: silver;
   }
 }
 

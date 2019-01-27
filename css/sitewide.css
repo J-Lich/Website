@@ -151,6 +151,20 @@ footer {
 
 /*Header Desktop*/
 @media (min-width: 761px) {
+  footer{
+    height: 50px;
+    width: 300px;
+    font-size: 1.5em;
+    line-height: 30px;
+    left: calc((100% - 300px)/2);
+  }
+
+  .contact img {
+    height: 30px;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
   header {
     position: relative;
 
@@ -328,6 +342,7 @@ footer {
     }
 
     #mainbody {
+      margin-bottom: 80px;
       position: relative;
 
       display: inline-block;
