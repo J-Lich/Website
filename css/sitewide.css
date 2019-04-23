@@ -82,25 +82,20 @@ a:hover {
 
 /* Footer Related */
 footer {
-  height: 70px;
-  width: 280px;
+  height: 50px;
+  width: 200px;
+
+  font-size: 1.5em;
+  line-height: 30px;
 
   border-radius: 15px;
   background-color: rgba(210, 210, 210, 0.7);
 
   position: fixed;
   bottom: 15px;
-  left: calc((100% - 280px)/2);
+  left: calc((100% - 200px)/2);
 }
 
-.container {
-  position: relative;
-
-  height: 100%;
-  width: 100%;
-
-  vertical-align: middle;
-}
 
 .contact {
   float: left;
@@ -110,11 +105,20 @@ footer {
 }
 
 .contact img {
-  height: 50%;
-  width: auto;
+  height: 25px;
+  width: 25px;
 
-  margin-top: 25%;
-  margin-left: 25%;
+  margin-top: 10px;
+  margin-left: 12.5px;
+}
+
+.container {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  vertical-align: middle;
 }
 
 .overlay {
@@ -160,29 +164,8 @@ footer .textOverlay {
 
 /*Header Desktop*/
 @media (min-width: 761px) {
-  footer{
-    height: 50px;
-<<<<<<< HEAD
-    width: 300px;
-    font-size: 1.5em;
-    line-height: 30px;
-    left: calc((100% - 300px)/2);
-  }
-
-  .contact img {
-    height: 30px;
-    margin-left: 35px;
-    margin-top: 10px;
-=======
-    width: 200px;
-    font-size: 1.5em;
-    line-height: 50px;
-    left: calc((100% - 200px)/2);
-  }
-
   .textOverlay {
     line-height: 50px;
->>>>>>> 068d2f854644b0f684f554c4b41793f1d7a34e96
   }
 
   header {
