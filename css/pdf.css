@@ -20,6 +20,7 @@
   }
 
   embed {
+    display: none;
     height: calc(100% - 50px - 2em - 20px - 45px);
     width: 100%;
     margin-bottom: 5px;
