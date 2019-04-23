@@ -39,6 +39,7 @@
   }
 
   footer .textOverlay {
+    display: none;
 
     position: fixed;
     width: 250px;
