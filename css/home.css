@@ -24,7 +24,7 @@
     width: 200px;
 
     position: absolute;
-    top: 50%;
+    top: 250px;
     left: calc((100% - 200px)/2);
 
     background-color: rgba(210,210,210,1);
