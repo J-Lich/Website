@@ -1,3 +1,6 @@
+/*Chrome work around*/
+* {-webkit-font-smoothing: antialiased;}
+
 /* Body standardisation */
 body {
   background-color: rgb(245, 240, 230);
