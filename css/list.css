@@ -18,13 +18,13 @@ figcaption {
 
   font-size: 10vmin;
 
-  color: white;
   font-weight: 1000;
 }
 
 #bodytitle h2 {
   width: 100%;
   text-align: center;
+  /* color: rgb(255, 128, 82); */
 }
 
 /* Desktop Body */
@@ -55,7 +55,7 @@ figcaption {
   }
 
   figcaption {
-    color: black;
+    color: rgb(255, 128, 82);
     font-size: 2em;
 
     top: 160px;
@@ -113,5 +113,11 @@ figcaption {
   .subsection p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+  }
+
+  figcaption{
+    color: white;
+    /* color: rgb(255, 128, 82); */
+    /* color: rgb(28, 27, 38); */
   }
 }

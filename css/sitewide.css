@@ -3,9 +3,14 @@
 
 /* Body standardisation */
 body {
-  background-color: rgb(245, 240, 230);
-
+  background-color: rgb(28, 27, 38);
+  color: white;
   max-width: 800px;
+
+  /*Dark colors rgb
+    Main: 28, 27, 38
+    Highligh: 255, 128, 82
+  */
 
   margin-top: 2em;
   margin-left: auto;
@@ -38,19 +43,19 @@ hr {
 
 a:visited {
 	font-weight: bold;
-	color: rgba(0, 0, 0, 0.7);
+  color: white;
 	text-decoration: none;
 }
 
 a:link {
 	font-weight: bold;
-	color: black;
+	color: rgb(255, 179, 150);
 	text-decoration: none;
 }
 
 a:hover {
 	font-weight: bold;
-	color: silver;
+	color: rgb(255, 128, 82);
 }
 
 .moreinfo {
@@ -100,6 +105,9 @@ footer {
   left: calc((100% - 200px)/2);
 }
 
+h3 {
+  color: rgb(255, 128, 82);
+}
 
 .contact {
   float: left;
@@ -155,15 +163,14 @@ footer .textOverlay {
 
 
   border-radius: 15px;
-  background-color: rgba(210, 210, 210, 0.9);
-  color: black;
+  background-color: rgb(28, 27, 38);
 
   width: 150px;
   height: 40px;
 }
 
 .container:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 /*Header Desktop*/
@@ -196,9 +203,11 @@ footer .textOverlay {
 
   h1 {
     font-size: 3em;
+    color: rgb(255, 128, 82);
   }
 
   header h3 {
+    color: white;
     position: absolute;
     top: 50px;
     left: 85px;
@@ -248,6 +257,14 @@ footer .textOverlay {
     padding-bottom: 2.5vw;
     margin-bottom: 2.5vw;
     border-bottom: 1px solid rgba(185, 185, 185, 1);
+  }
+
+  h1 {
+    color: rgb(255, 128, 82);
+  }
+
+  header h3 {
+    color: white;
   }
 
   .textOverlay {
@@ -325,7 +342,8 @@ footer .textOverlay {
 
   	text-align: center;
 
-    background-color: rgb(245, 240, 230);
+    background-color: rgb(28, 27, 38);
+    color: rgb(255, 128, 82);
 
     padding-top: calc((100vh - 20vw - 1em - 500px)/2)
   }

@@ -9,6 +9,10 @@
 
 }
 
+.download_link h3 {
+  color: black;
+}
+
 /* Desktop Body */
 @media (min-width: 761px) {
   header {
